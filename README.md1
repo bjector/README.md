@@ -1,0 +1,23 @@
+# README.md1
+# ESP32 WiFi Scanner Lab
+
+For this lab, I used the ESP32-CAM and the built-in WiFiScan example sketch to detect and list nearby wireless networks. 
+
+
+## Set It Up
+
+1. Opened Arduino IDE and selected:
+   
+2. Made sure my board was set to: `AI Thinker ESP32-CAM`
+3. Connected the ESP32-CAM to my FTDI programmer (with IO0 to GND for upload mode)
+4. Uploaded the sketch to the board
+5. Removed IO0 from GND and pressed the reset button
+6. Opened the Serial Monitor at `115200` baud to view the scan results
+
+
+The Serial Monitor displayed all nearby Wi-Fi networks. Each line showed the SSID, signal strength in dBm, channel number, and the type of encryption used (like WPA2 or Open). The results refreshed every 10 seconds.
+
+
+## What I Learned
+
+This lab showed how easy it is to use the ESP32-CAM to analyze wireless environments. It helped me better understand what kind of information is broadcast by networks and why that matters in cybersecurity.
